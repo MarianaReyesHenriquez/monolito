@@ -1,3 +1,5 @@
+Práctica 5 - Incluir todo lo necesario para subir el proyecto a K8s
+
 Para construir la imagen:
 docker build -t monolito .
 
