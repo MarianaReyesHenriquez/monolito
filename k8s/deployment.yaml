@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: monolito
+  name: monolito
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monolito
+  template:
+    metadata:
+      labels:
+        app: monolito
+    spec:
+      containers:
+        - image: demo:4
+          name: demo
+          ports:
+            - containerPort: 8080
